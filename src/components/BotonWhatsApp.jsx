@@ -7,7 +7,7 @@ export default function BotonWhatsApp() {
       rel="noopener noreferrer"
     >
       <img
-        src="/images/whatsapp-icon.webp"
+        src="Agroquim/images/whatsapp-icon.webp"
         alt="WhatsApp"
         className="w-14 h-14 hover:scale-110 transition"
       />
