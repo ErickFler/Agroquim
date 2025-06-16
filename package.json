@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.5.2",
+    "framer-motion": "^12.18.1",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

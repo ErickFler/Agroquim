@@ -1,10 +1,37 @@
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Productos from './pages/Productos';
+import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
+
+export default function App() {
   return (
-    <div className="min-h-screen bg-green-50 p-8">
-      <h1 className="text-4xl font-bold text-green-700">Agroquímicos MX</h1>
-      <p className="mt-4 text-gray-600">Bienvenido a nuestra web profesional.</p>
-    </div>
+    <Router>
+      <Navbar />
+      <main className="min-h-screen px-4 py-8">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
-export default App;
+<a
+  href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20quiero%20información%20sobre%20sus%20productos."
+  className="fixed bottom-6 right-6 z-50"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img
+    src="/images/whatsapp-icon.png"
+    alt="WhatsApp"
+    className="w-14 h-14 hover:scale-110 transition"
+  />
+</a>
